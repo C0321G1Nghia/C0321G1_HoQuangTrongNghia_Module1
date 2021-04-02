@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ung_Dung_May_Tinh</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th colspan="2"><input type="text"placeholder="Nhập số" name="so" id="so1"></th>
+        <th colspan="2"><input type="text"placeholder="Nhập số" name="so" id="so2"></th>
+    </tr>
+    <tr>
+        <td><input type="button"value="Cộng" onclick="Cong()"></td>
+        <td><input type="button"value="Trừ"onclick="Tru()"></td>
+        <td><input type="button" value="Nhân"onclick="Nhan()"></td>
+        <td><input type="button"value="Chia"onclick="Chia()"></td>
+    </tr>
+</table>
+
+
+
+
+<script>
+    function Cong() {
+        let a = parseFloat(document.getElementById("so1").value);
+        let b = parseFloat(document.getElementById("so2").value);
+        let c = a + b ;
+        alert("Kết quả =" + c);
+
+    }
+    function Tru() {
+        let a = parseFloat(document.getElementById("so1").value);
+        let b = parseFloat(document.getElementById("so2").value);
+        let d = a - b ;
+        alert("Kết quả =" + d);
+
+
+    }
+    function Nhan() {
+        let a = parseFloat(document.getElementById("so1").value);
+        let b = parseFloat(document.getElementById("so2").value);
+        let e = a * b ;
+        alert("Kết quả =" + e);
+    }
+    function Chia() {
+        let a = parseFloat(document.getElementById("so1").value);
+        let b = parseFloat(document.getElementById("so2").value);
+        let f = a / b ;
+        alert("Kết quả =" + f);
+    }
+</script>
+</body>
+</html>

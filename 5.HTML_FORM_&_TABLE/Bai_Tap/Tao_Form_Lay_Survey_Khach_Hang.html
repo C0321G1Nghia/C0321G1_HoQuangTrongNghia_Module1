@@ -8,35 +8,36 @@
 <form action="survey.html", method="post">
     <h2>Market Research Survey</h2>
     <b>Please take a few moments to complete this satisfaction survey.</b><br>
-    <b>What is your age range?</b> <br>
-    <select >
+    <label for="range"><b>What is your age range?</b></label> <br>
+
+    <select id="range">
         <option value="">18-24</option>
         <option>    25-34</option>
         <option>    35-50</option>
         <option>    50+</option>
     </select><br>
-    <b>What is your yearly income range?</b> <br>
-    <select >
+    <label for="incom"><b>What is your yearly income range?</b></label> <br>
+    <select id="incom">
         <option value="">$0-$25,000</option>
         <option>    $25,001-$50,000</option>
         <option>   $50,001-$100,000</option>
         <option>  $100,001+</option>
     </select> <br>
     <b>Gender Identity</b> <br>
-    <label for="gender1"> Male </label> <br>
-    <input type="radio" id="gender1" , name="gender"/> Male <br>
-    <input type="radio" , name="rd"/> FeMale <br>
-    <input type="radio", name="rd"/> Nobinary <br>
-    <input type="radio", name="rd"/> Other <br>
+
+    <input type="radio" id="male" , name="rd"/> <label for="male">Male</label> <br>
+    <input type="radio" , name="rd" id="female"/> <label for="female">Female</label> <br>
+    <input type="radio", name="rd" id="Nobinary"/> <label for="Nobinary">Nobinary</label> <br>
+    <input type="radio", name="rd" id="Other"/> <label for="Other">Other</label> <br>
     <input type="text", name="text">
     <h5>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h5>
-    <input type="checkbox", name="pro"> Product 1 <br>
-    <input type="checkbox", name="pro"> Product 2 <br>
-    <input type="checkbox", name="pro"> Product 3 <br>
+    <input type="checkbox", name="pro" id="pro1"> <label for="pro1">Product 1</label>  <br>
+    <input type="checkbox", name="pro" id="pro2"> <label for="pro2">Product 1</label> <br>
+    <input type="checkbox", name="pro" id="pro3"> <label for="pro3">Product 1</label> <br>
     <p>How often would you use our new product?</p>
-    <input type="radio", name="rd"/> Daily <br>
-    <input type="radio", name="rd"/> Weekly <br>
-    <input type="radio", name="rd"/> Monthly <br>
+    <input type="radio", name="rd" id="daily"/> <label for="daily">Daily </label> <br>
+    <input type="radio", name="rd" id="weekly"/> <label for="weekly">Weekly </label> <br>
+    <input type="radio", name="rd" id="monthly"/> <label for="monthly">Monthly </label> <br>
     <h5>What would you pay for the new product?</h5>
     $ <input type="text", size="3">. <input type="text", size="1"> <br>
     Dollars Cent
