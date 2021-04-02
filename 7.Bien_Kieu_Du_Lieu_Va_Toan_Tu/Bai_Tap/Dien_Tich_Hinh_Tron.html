@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tính diện tích hình tròn</h3>
+<input type="text"placeholder="Bán kính"id="bk"> <br>
+<input type="button"value="Tính"onclick="Dientich()"><br>
+
+<script>
+    function Dientich() {
+        let a = document.getElementById("bk").value;
+        const pi = 3.14;
+        let b = parseFloat(a)*parseFloat(a)*pi;
+
+        alert("Diện tích hình tròn : " + b);
+
+
+
+    }
+</script>
+</body>
+</html>
