@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToanTu</title>
+</head>
+<body>
+<input type="text"placeholder="Điểm toán" id="Toan"> <br>
+<input type="text"placeholder="Điểm lý" id="Ly"> <br>
+<input type="text" placeholder="Điểm hóa" id="Hoa"> <br>
+<input type="button"value="Điểm trung bình" onclick="diemtrungbinh()"> <br>
+<input type="button"value="Tổng" onclick="Tong()"> <br>
+<script>
+    function Tong() {
+        let a = document.getElementById('Toan').value;
+        let b = document.getElementById('Ly').value;
+        let c = document.getElementById('Hoa').value;
+        let tong = parseFloat(a) + parseFloat(b) + parseFloat(c);
+        alert('Tổng điểm : ' + tong);
+    }
+    function diemtrungbinh() {
+        let a = document.getElementById('Toan').value;
+        let b = document.getElementById('Ly').value;
+        let c = document.getElementById('Hoa').value;
+        let diemtrungbinh = (parseFloat(a) + parseFloat(b) + parseFloat(c))/3;
+
+        alert('Điểm trung binh :' + diemtrungbinh);
+
+    }
+</script>
+
+
+
+</body>
+</html>
