@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>
+            <label for="sotien">Amount</label>
+        </th>
+        <th>
+            <label for="tien1">From Currency</label>
+        </th>
+        <th>
+            <label for="tien2">To Currency</label>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <input type="text"id="sotien" name="sotien"size="30"/>
+        </td>
+        <td>
+            <select id="tien1">
+                <option value="23000">VietNam</option>
+                <option value="1">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="tien2">
+                <option value=" 1">USD</option>
+                <option value="23000">VietNam</option>
+            </select>
+        </td>
+        <td>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+        </td>
+    </tr>
+<tr>
+    <td>
+        <input type="button"value="Convert" onclick="Chuyendoi()">
+        <script>
+            function Chuyendoi() {
+                let a = parseFloat(document.getElementById("sotien").value);
+                let b = parseFloat(document.getElementById("tien1").value);
+                let c = parseFloat(document.getElementById("tien2").value);
+                let d = a/b*c;
+                alert("Kết quả : " +d);
+
+            }
+        </script>
+    </td>
+</tr>
+   
+</table>
+</body>
+</html>
