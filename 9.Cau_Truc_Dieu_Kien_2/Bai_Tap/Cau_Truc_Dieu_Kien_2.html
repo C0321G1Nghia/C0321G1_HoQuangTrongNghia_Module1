@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<p> <b>Chuyển độ C sang độ F</b></p>-->
+<!--<input type="text" id="doC" placeholder="Nhập độ C" name="doC">-->
+<!--<input type="button" id="tinh" name="tinh" value="Chuyển đổi" onclick="Tinh()"> <br>-->
+<!--Kết quả <p id="kq"></p>-->
+<!--<script>-->
+<!--    function Tinh() {-->
+<!--        let a = document.getElementById("doC").value;-->
+<!--        b = a * (9/5) + 32 ;-->
+<!--        document.getElementById("kq").innerText = b + "℉";-->
+
+<!--    }-->
+<!--</script>-->
+<!--<br>-->
+<!--<p><b>Chuyển met sang feet</b></p>-->
+<!--<input type="text" id="met" placeholder="Nhập số met" name="met">-->
+<!--<input type="button" id="tinh" name="tinh" value="Chuyển đổi" onclick="Tinh2()"> <br>-->
+<!--Kết quả <p id="kq1"></p>-->
+<!--<script>-->
+<!--    function Tinh2() {-->
+<!--        let a1 = document.getElementById("met").value;-->
+<!--        let b1 = a1 * 3.2808;-->
+<!--        document.getElementById("kq1").innerText = b1 + "Feet";-->
+
+<!--    }-->
+<!--</script>-->
+<!--<br>-->
+<!--<p><b>Diện tích hình vuông</b></p>-->
+<!--<input type="text" id="S" placeholder="Nhập chiều dài cạnh" name="S">-->
+<!--<input type="button" id="tinh" name="tinh" value="Tính diện tích" onclick="Tinh3()"> <br>-->
+<!--Kết quả <p id="kq3"></p>-->
+<!--<script>-->
+<!--    function Tinh3() {-->
+<!--        let a2 = document.getElementById("S").value;-->
+<!--        let b2 = a2^2;-->
+<!--        document.getElementById("kq3").innerText = b2 + "m²";-->
+
+<!--    }-->
+<!--</script>-->
+<!--<br>-->
+<!--<p><b>Tính diện tích hình chữ nhật</b></p>-->
+<!--<input type="text" id="ChieuDai" placeholder="Nhập chiều dài" name="ChieuDai"> <br>-->
+<!--<input type="text" id="ChieuRong"placeholder="Nhập chiều rộng" name="ChieuRong">-->
+<!--<input type="button" id="Tinh" name="Tinh" value="Tính diện tích" onclick="Tinh()">-->
+<!--<br>-->
+<!--Kết quả <p id="kq"></p>-->
+<!--<script>-->
+<!--    function Tinh(){-->
+<!--        let a = document.getElementById("ChieuDai").value;-->
+<!--        let b = document.getElementById("ChieuRong").value;-->
+<!--        let c = (a+b)*2;-->
+<!--        document.getElementById("kq").innerText = c + "m²";-->
+
+<!--    }-->
+
+<!--</script>-->
+<!--<br>-->
+<!--<p><b>Giải phương trình bậc 1</b></p>-->
+<!--<p>a*x + b = c</p>-->
+<!--<input type="text" id="Soa" name="SoA" placeholder="Nhập số a"> x-->
+<!--<input type="text" id="Sob" name="SoB" placeholder="Nhập số b"> =-->
+<!--<input type="text" id="Soc" name="soC" placeholder="Nhập số c"> <br>-->
+<!--<input type="button" name="tinh" value="Tính phương trình" onclick="Tinh()"> <br>-->
+<!--Phương trình có tập nghiệm S = { <p id="kq"></p>}-->
+<!--<script>-->
+<!--    function Tinh() {-->
+<!--        let a = document.getElementById("Soa").value;-->
+<!--        let b = document.getElementById("Sob").value;-->
+<!--        let c = document.getElementById("Soc").value;-->
+<!--        let x = (c-b)/a;-->
+<!--        if (a != 0){-->
+<!--            document.getElementById("kq").innerText = x;-->
+
+<!--        } else {-->
+<!--            document.getElementById("kq").innerText = "Phương trình vô nghiệm";-->
+<!--        }-->
+
+<!--    }-->
+<!--</script>-->
+<!--<br>-->
+<!--<p><b>Giải phương trình bậc 2</b></p>-->
+<!--<p>a*x² + b*x +c = 0</p>-->
+<!--<input type="text" id="soa" name="soa" placeholder="Nhập số a"> <br>-->
+<!--<input type="text" id="sob" name="sob" placeholder="Nhập số b"><br>-->
+<!--<input type="text" id="soc" name="soc" placeholder="Nhập số c"><br>-->
+<!--<input type="button" id="tinh" name="tinh" value="Tính phương trình" onclick="Tinh()"> <br>-->
+<!--Kết quả <p id="kq"></p>-->
+<!--<script>-->
+<!--    function Tinh() {-->
+<!--        let a = document.getElementById("soa").value;-->
+<!--        let b = document.getElementById("sob").value;-->
+<!--        let c = document.getElementById("soc").value;-->
+<!--        let d = (b*b)-(4*a*c);-->
+<!--        if (d < 0){-->
+<!--            document.getElementById("kq").innerText = "Phương trình vô nghiệm";-->
+<!--        } else if( d = 0 ){-->
+<!--            let x1 = -(b/2*a);-->
+<!--            document.getElementById("kq").innerText = "Phương trình có nghiệm kép" + x1;-->
+<!--        } else {-->
+<!--            let x2 = (-b + Math.sqrt(d))/(2 * a);-->
+<!--            let x3 = (-b - Math.sqrt(d))/(2 * a);-->
+<!--            document.getElementById("kq").innerText = "Phương trình có 2 nghiệm là " + x2 +"và" + x3;-->
+<!--        }-->
+<!--    }-->
+
+
+<!--</script>-->
+<!--<p><b>Kiểm tra tuổi</b></p>-->
+<!--<input type="text" id="tuoi" name="tuoi" placeholder="Nhập số tuổi"><br>-->
+<!--<input type="button"name="Kiemtra" value="Kiểm tra" onclick="kiemtra()"><br>-->
+<!--Kết quả <p id="kq"></p>-->
+<!--<script>-->
+<!--    function kiemtra() {-->
+<!--        let a = parseInt(document.getElementById("tuoi").value);-->
+<!--        if (a > 120) {-->
+<!--            document.getElementById("kq").innerText = "Độ tuổi không hợp lý";-->
+<!--        } else if (a <= 0) {-->
+<!--            document.getElementById("kq").innerText = "Độ tuổi không hợp lý";-->
+<!--        } else {-->
+<!--            document.getElementById("kq").innerText = "Tuổi của người này là" + a;-->
+<!--        }-->
+<!--    }-->
+<!--</script> <br>-->
+<!--<p><b>Kiểm tra cạnh một tam giác</b></p>-->
+<!--<input type="text" id="a" name="a" placeholder="Nhập cạnh a"> <br>-->
+<!--<input type="text" id="b" name="b" placeholder="Nhập cạnh b"><br>-->
+<!--<input type="text" id="c" name="c" placeholder="Nhập cạnh c"><br>-->
+<!--<input type="button" id="kt" name="kt" value="Kiểm tra" onclick="kiemtra()"> <br>-->
+<!--Kết quả <p id="kq"></p>-->
+<!--<script>-->
+<!--    function kiemtra() {-->
+<!--        let a = parseFloat(document.getElementById("a").value);-->
+<!--        let b = parseFloat(document.getElementById("b").value);-->
+<!--        let c = parseFloat(document.getElementById("c").value);-->
+<!--        if (a > 0){-->
+<!--            if (b > 0){-->
+<!--                if (c > 0){-->
+<!--                    if (a + b > c){-->
+<!--                        if (b+c > a){-->
+<!--                            if (a + c > b){-->
+<!--                                document.getElementById("kq").innerText = "Đây là các cạnh của một tam giác";-->
+<!--                            }else {-->
+<!--                                document.getElementById("kq").innerText = "Đây không phải cạnh của một tam giác";-->
+<!--                            }-->
+<!--                        } else {-->
+<!--                            document.getElementById("kq").innerText = "Đây không phải cạnh của một tam giác";-->
+<!--                        }-->
+<!--                    }else {-->
+<!--                        document.getElementById("kq").innerText = "Đây không phải cạnh của một tam giác";-->
+<!--                    }-->
+<!--                } else {-->
+<!--                    document.getElementById("kq").innerText = "Đây không phải cạnh của một tam giác";-->
+<!--                }-->
+
+<!--            } else {-->
+<!--                document.getElementById("kq").innerText = "Đây không phải cạnh của một tam giác";-->
+<!--            }-->
+<!--        } else {-->
+<!--            document.getElementById("kq").innerText = "Đây không phải cạnh của một tam giác";-->
+<!--        }-->
+
+<!--    }-->
+<!--</script>-->
+<!--<p>Chương trình tính giá điện</p>-->
+<!--<input type="text" id="dien" name="dien" placeholder="Nhập số chữ điện"> <br>-->
+<!--<input type="button"id="tinh" name="tinh" value="Tính tiền" onclick="Tinh()"> <br>-->
+<!--Giá điện <p id="kq"></p>-->
+<!--<p> Giá điện </p><br>-->
+<!--<p> kWh = 0 - 50  :  1000 VNĐ/1 kWh</p><br>-->
+<!--<p> kWh = 51 - 100  :  1200 VNĐ/1 kWh</p> <br>-->
+<!--<p>kWh = >100  : OK </p>-->
+
+<!--<script>-->
+<!--    function Tinh() {-->
+<!--        let a = parseFloat(document.getElementById("dien").value);-->
+<!--        (a <= 50) ? document.getElementById("kq").innerText = a * 1000 + " VNĐ":-->
+<!--            (a<=100)? document.getElementById("kq").innerText = ((a-50) * 1200) + (50*1000) +" VNĐ":-->
+<!--                document.getElementById("kq").innerText = "OK";-->
+<!--        }-->
+
+
+
+<!--</script>-->
+
+<!--<p><b>Tính thuế thu nhập cá nhân</b></p>-->
+<!--<p>Thu nhập trên 10tr : Thuế = 5% lương</p>-->
+<!--<p>Thu nhập trên 15tr : Thuế = 7% lương</p>-->
+<!--<p>Thu nhập trên 20tr : Thuế = ok </p>-->
+<!--<input type="text" id="luong" name="luong" placeholder="Nhập số tiền lương"> <br>-->
+<!--<input type="button" id="tinh" name="tinh" value="Tính tiền thuế" onclick="Tinh()"> <br>-->
+<!--Số tiền thuế phải đóng : <p id="kq"></p>-->
+<!--<script>-->
+<!--    function Tinh() {-->
+<!--        let a = parseFloat(document.getElementById("luong").value);-->
+<!--        (a<10000000)? document.getElementById("kq").innerText = "Bạn không cần phải đóng thuế":-->
+<!--        (a>=10000000) ? document.getElementById("kq").innerText = a*(5/100) + "VNĐ":-->
+<!--            (a>=15000000)? document.getElementById("kq").innerText = a * (7/100) + "VNĐ":-->
+<!--                document.getElementById("kq").innerText = "OK";-->
+
+
+<!--    }-->
+<!--</script>-->
+<p><b>Tính giải suất ngân hàng </b></p>
+<p>Tiền lãi mỗi tháng là : 1%</p>
+<input type="text" id="tien" name="tien" placeholder="Nhập số tiền gửi">
+<input type="text"id="thang" name="thang" placeholder="Nhập số tháng gửi">
+<input type="button" id="Tinh" value="Tính số tiền lãi" onclick="Tinh()">
+Số tiền tính cả lãi nhận được : <p id="kq"></p>
+<script>
+    function Tinh() {
+        let a = parseFloat(document.getElementById("tien").value);
+        let b = parseInt(document.getElementById("thang").value);
+        let c = a* Math.pow((1+0.01),b);
+        document.getElementById("kq").innerText = c + " VNĐ";
+
+    }
+</script>
+</body>
+</html>
