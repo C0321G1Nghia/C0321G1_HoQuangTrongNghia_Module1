@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<p><b>Kiểm tra a có chia hết cho b không</b></p>-->
+<!--<input type="text" id="a" placeholder="Nhập số a"> <br>-->
+<!--<input type="text" id="b" placeholder="Nhập số b"> <br>-->
+<!--<input type="button" id="kt" name="kt" value="Kiểm tra" onclick="Tinh()"> <br>-->
+<!--Kết quả : <p id="kq"></p>-->
+<!--<script>-->
+<!--    function Tinh() {-->
+<!--        let a = parseFloat(document.getElementById("a").value);-->
+<!--        let b = parseFloat(document.getElementById("b").value);-->
+<!--        let c = a % b;-->
+
+<!--        if(b==0){-->
+<!--               document.getElementById("kq").innerText = "Vô nghiệm";-->
+<!--        } else {-->
+<!--            if (c ==0){-->
+<!--                document.getElementById("kq").innerText = "a chia hết cho b";-->
+<!--            }else {-->
+<!--                document.getElementById("kq").innerText = "a không chia hết cho b";-->
+<!--            }-->
+<!--        }-->
+<!--        }-->
+<!--</script>-->
+
+<!--<p><b>Kiểm tra tuổi nhập học lớp 10</b></p>-->
+<!--<input type="text" id="tuoi" placeholder="Nhập số tuổi"> <br>-->
+<!--<input type="button"id="kt" name="kt" value="Kiểm tra" onclick="kiemtra()"> <br>-->
+<!--Kết quả : <p id="kq"></p>-->
+<!--<script>-->
+<!--    function kiemtra() {-->
+<!--        let a = parseInt(document.getElementById("tuoi").value);-->
+<!--        if (a>=16){-->
+<!--            document.getElementById("kq").innerText = "Đủ tuổi học lớp 10";-->
+<!--        } else {-->
+<!--            document.getElementById("kq").innerText = "Không đủ tuổi học lớp 10";-->
+<!--        }-->
+
+<!--    }-->
+
+
+
+<!--</script>-->
+
+<!--<p><b>Kiểm tra một số với 0</b></p>-->
+<!--<input type="text" name="so" id="so" placeholder="Nhập số">-->
+<!--<input type="button" id="kiemtra" value="Kiểm tra" onclick="kiemtra()">-->
+<!--Kết quả : <p id="kq"></p>-->
+<!--<script>-->
+<!--    function kiemtra() {-->
+<!--        let a = document.getElementById("so").value;-->
+<!--        if (a>0){-->
+<!--            document.getElementById("kq").innerText = "Số này lớn hơn 0";-->
+<!--        }else {-->
+<!--            document.getElementById("kq").innerText = "Số này bé hơn 0";-->
+<!--        }-->
+
+<!--    }-->
+<!--</script>-->
+
+<!--<p><b>Tìm số lớn nhất trong 3 số</b></p>-->
+<!--<input type="text" id="a" name="a" placeholder="Nhập số a">-->
+<!--<input type="text" id="b" name="b" placeholder="Nhập số b">-->
+<!--<input type="text" id="c" name="c" placeholder="Nhập số c">-->
+<!--<input type="button"id="kt" name="kt" value="Kiểm tra" onclick="Tinh()">-->
+<!--Kết quả : <p id="kq"></p>-->
+<!--<script>-->
+<!--    function Tinh() {-->
+<!--        let a = document.getElementById("a").value;-->
+<!--        let b = document.getElementById("b").value;-->
+<!--        let c = document.getElementById("c").value;-->
+<!--        if (a > b){-->
+<!--            if (a > c){-->
+<!--                document.getElementById("kq").innerText = a + " là số lớn nhất";-->
+<!--            } else {-->
+<!--                document.getElementById("kq").innerText = c + " là số lớn nhất";-->
+<!--            }-->
+<!--        }else if (b > c){-->
+<!--            document.getElementById("kq").innerText = b + "l à số lớn nhất";-->
+
+<!--        }else {-->
+<!--            document.getElementById("kq").innerText = c + " là số lớn nhất";-->
+<!--        }-->
+
+<!--    }-->
+<!--</script>-->
+<!--<p><b>Xếp hạng học lực</b></p>-->
+<!--<p>Cách tính điểm học lực trung bình</p>-->
+<!--<p>((Điểm kiểm tra)*0.5 + (Điểm thi giữa kì)*1.5 + (Điểm thi cuối kì)*2))/2</p>-->
+<!--<p> Điểm trung bình >= 8 : loại A</p>-->
+<!--<p> Điểm trung bình >= 7 < 8 : loại B</p>-->
+<!--<p> Điểm trung bình >= 6 < 7 : loại C</p>-->
+<!--<p> Điểm trung bình >= 5 < 6 : loại D</p>-->
+<!--<input type="text" id="kt" name="kt" placeholder="Nhập điểm kiểm tra"><br>-->
+<!--<input type="text" id="gk" name="gk" placeholder="Nhập điểm giữa kì"><br>-->
+<!--<input type="text" id="ck" name="ck" placeholder="Nhập điểm cuối kì"><br>-->
+<!--<input type="button" id="kiemtra" value="Xếp loại" onclick="Tinh()">-->
+<!--Xếp loại : <p id="kq"></p>-->
+<!--<script>-->
+<!--    function Tinh() {-->
+<!--        let a = parseFloat(document.getElementById("kt").value);-->
+<!--        let b = parseFloat(document.getElementById("gk").value);-->
+<!--        let c = parseFloat(document.getElementById("ck").value);-->
+<!--        d = ((a*0.5)+(b*1.5)+(c*2))/4;-->
+<!--        if (d>=8){-->
+<!--            document.getElementById("kq").innerText = "Học sinh xếp loại A";-->
+<!--        } if (d>=7){-->
+<!--            if (d<8){-->
+<!--                document.getElementById("kq").innerText = "Học sinh xếp loại B";-->
+<!--            }-->
+<!--        }if (d>=6) {-->
+<!--            if (d<7){-->
+<!--                document.getElementById("kq").innerText = "Học sinh xếp loại C";-->
+<!--            }-->
+<!--        }if (d>=5) {-->
+<!--            if (d<6){-->
+<!--                document.getElementById("kq").innerText = "Học sinh xếp loại D";-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--<p><b>Tính hoa hồng theo doanh số</b></p>-->
+<!--<p>Giá của một sản phẩm là 5000 VNĐ</p>-->
+<!--<p>Bán được >10 sản phẩm : hoa hồng 5% trên tổng số sản phẩm</p>-->
+<!--<p>Bán được >100 sản phẩm : hoa hồng 8% trên tổng số sản phẩm</p>-->
+<!--<p>Bán được >1000 sản phẩm : hoa hồng 10% trên tổng số sản phẩm</p>-->
+<!--<input type="text" id="sp" placeholder="Nhập số lượng sản phẩm bán được">-->
+<!--<input type="button" id="tinh" value="Tính tiền" onclick="Tinh()">-->
+<!--Số tiền hoa hồng nhận được : <p id="kq"></p>-->
+<!--<script>-->
+<!--    function Tinh() {-->
+<!--        let a = parseInt(document.getElementById("sp").value);-->
+<!--        let b = a*5000*(5/100);-->
+<!--        let c = a*5000*(8/100);-->
+<!--        let d = a*5000*(10/100);-->
+<!--        if (a>=10){-->
+<!--            if (a<100){-->
+<!--                document.getElementById("kq").innerText = b + " VNĐ";-->
+<!--            }-->
+<!--        }if (a>=100){-->
+<!--            if (a<1000){-->
+<!--                document.getElementById("kq").innerText = c + " VNĐ";-->
+<!--            }-->
+<!--        }if (a>=1000){-->
+<!--                document.getElementById("kq").innerText = d + " VNĐ";-->
+<!--            }-->
+
+<!--    }-->
+<!--</script>-->
+
+<!--<p><b>Tính giá cước điện thoại hộ gia đình</b></p>-->
+<!--<p>Giá phút đầu : 1000 VNĐ / 1 phút </p>-->
+<!--<p>Giá phút tiếp theo : 1500 VNĐ / 1 phút </p>-->
+<!--<p>Giá trên 10 phút : 2000 VNĐ / 1 phút </p>-->
+<!--<input type="text" id="thoigian" placeholder="Số phút gọi"> <br>-->
+<!--<input type="button" id="tinh" value="Tổng tiền"onclick="Tinh()"><br>-->
+<!--Số tiền phải trả là : <p id="kq"></p>-->
+<!--<script>-->
+<!--    function Tinh() {-->
+<!--        let a = parseFloat(document.getElementById("thoigian").value);-->
+
+<!--        (a<=1)? document.getElementById("kq").innerText = a * 1000 +" VNĐ":-->
+<!--            (a<=10)? document.getElementById("kq").innerText = ((a * 1000)+((a-1) * 1500)) +" VNĐ":-->
+<!--                document.getElementById("kq").innerText = ((a * 1000)+((a-1) * 1500) + ((a-10) * 2000)) + " VNĐ";-->
+
+<!--    }-->
+<!--</script>-->
+</body>
+</html>
