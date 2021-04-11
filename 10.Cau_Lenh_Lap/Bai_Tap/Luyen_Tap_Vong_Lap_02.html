@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>In tam giac vuong</p>
+<!--<div id="demo">
+
+</div>
+<script>
+
+    for (let i = 0;i<10; i++){
+        for(let j = 0; j <= i; j++){
+            var node = document.createTextNode("*");
+            var div = document.getElementById("demo");
+            div.appendChild(node);
+
+        }
+        var p = document.createElement("br");
+        var div1 = document.getElementById("demo");
+        div1.appendChild(p);
+
+
+    }
+</script>
+<br>
+<div id="demo2">
+
+</div>
+<script>
+    for (let i = 9; i >=0; i&#45;&#45;){
+        for (let j = 0; j <=i; j++){
+            var node = document.createTextNode("*");
+            var div = document.getElementById("demo2");
+            div.appendChild(node);
+        }
+        var p = document.createElement("br");
+        var div1 = document.getElementById("demo2");
+        div1.appendChild(p);
+        console.log("*");
+    }
+</script>
+<br>-->
+<!--
+<div id="demo3"></div>
+<script>
+    for (let i = 0; i <10; i ++){
+        for (let j = 9; j >= 0; j&#45;&#45;){
+
+            if (j >= (i+1)){
+                var node1 = document.createTextNode("..");
+                var div = document.getElementById("demo3");
+                div.appendChild(node1);
+
+            } else {
+                var node = document.createTextNode("*");
+                var div = document.getElementById("demo3");
+                div.appendChild(node);
+            }
+
+        }
+            var p = document.createElement("br");
+            var div1 = document.getElementById('demo3');
+            div1.appendChild(p);
+    }
+</script>
+<br>
+<div id="demo4"></div>
+<script>
+
+    for (let i = 9; i >0; i &#45;&#45;){
+        for (let j = 0; j <i; j++){
+
+            if (j >= (i-1)){
+                var node1 = document.createTextNode("..");
+                var div = document.getElementById("demo4");
+                div.appendChild(node1);
+
+            } else {
+                var node = document.createTextNode("*");
+                var div = document.getElementById("demo4");
+                div.appendChild(node);
+            }
+
+        }
+        var p = document.createElement("br");
+        var div1 = document.getElementById('demo4');
+        div1.appendChild(p);
+
+    }
+
+</script>
+-->
+
+<!--<p>In hình chữ nhật</p>-->
+<!--<script>-->
+<!--    let i = 1;-->
+<!--    let n = 1;-->
+<!--    let star = "*";-->
+<!--    let space = '&nbsp;&nbsp;';-->
+<!--    while (i <= 2) {-->
+<!--        document.write(star.repeat(22) + '<br>');-->
+<!--        while (n <= 5) {-->
+<!--            document.write(star + space.repeat(20) + star + '<br>');-->
+<!--            n++;-->
+<!--        }-->
+<!--        i++;-->
+<!--    }-->
+<!-- </script>-->
+<p>Lai suat ngan hang</p>
+<p>Tính tiền lãi ngân hàng khi biết số tiền gửi và số tháng gửi</p>
+<script>
+    let amount = parseInt(prompt('Nhập vào số tiền ban đầu:'));
+    let n = parseInt(prompt('Nhập vào số tháng:'));
+    let r = parseFloat(prompt('Nhập vào lãi suất:'));
+    let result = amount;
+    let i = 1;
+    while (i <= n) {
+        result =result*(1 + r);
+        i++;
+    }
+    alert(result);
+
+</script>
+</body>
+</html>

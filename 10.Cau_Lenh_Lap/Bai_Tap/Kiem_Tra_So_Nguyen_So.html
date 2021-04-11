@@ -5,16 +5,31 @@
     <title>Title</title>
 </head>
 <body>
-
+<p>Kiem tra so nguyen to</p>
+<div id="hienso"></div>
 <script>
-    let a = true;
-    if (a<1){
-        a=false;
-    } else {
-        for (let i = 1; i< n-i; i++)
-        {
-            if()
+    var isTr;
+    var dem = 0;
+    for (let i = 1; i >0; i++){
+        isTr = true;
+        for (let j = 1; j < i; j++){
+
+            if (j > 1 && j < i && (i % j == 0)){
+
+                isTr = false;
+                break;
+
+            }
+
         }
+        if (isTr){
+            var node = document.createTextNode(i + ",");
+            var div1 = document.getElementById('hienso');
+            div1.appendChild(node);
+            dem++;
+        }
+        if(dem == 20) ; break;
+
     }
 </script>
 </body>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="ball1" style="height: 20px; width: 100px; border: 1px solid ; background-color: lightblue;" onclick="myClick1();">
+<img id="push" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Soccer_ball.svg" STYLE="height: 20px; with: 20px" >
+</div>
+<div id="ball2" style="height: 20px; width: 100px; border:  1px solid; background-color: lightblue;" onclick="myCLick2();">
+    <img id="push2" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Soccer_ball.svg" style="height: 20px; width:  20px;" alt="">
+</div>
+<div id="ball3" style="height: 20px; width: 100px; border:  1px solid; background-color: lightblue;" onclick="myCLick3();">
+    <img id="push3" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Soccer_ball.svg" style="height: 20px; width:  20px;" alt="">
+</div>
+
+<script>
+    var ball1;
+    var ball2;
+    var ball3;
+    var push;
+    var push2;
+    var push3;
+    var isN = true;
+    var isN2 = true;
+    var isN3 = true;
+    push = document.getElementById("push");
+    push2 = document.getElementById("push2");
+    push3 = document.getElementById("push3");
+    ball1 = document.getElementById("ball1").value;
+    ball2 = document.getElementById("ball2").value;
+    ball3 = document.getElementById("ball3").value;
+
+    function myClick1() {
+        if (isN) {
+
+            push.style.float = 'right';
+            isN = false;
+            if(!isN && !isN2 && !isN3) {
+                push3.style.float = 'left';
+                isN3 = true;
+            }
+        } else {
+
+            push.style.float = 'left';
+            isN = true;
+            if(isN && isN2 && isN3) {
+                push3.style.float = 'right';
+                isN3 = false;
+            }
+        }
+    }
+    function myCLick2() {
+        if (isN2) {
+
+            push2.style.float = 'right';
+            isN2 = false;
+            if(!isN && !isN2 && !isN3) {
+                push.style.float = 'left';
+                isN = true;
+            }
+        } else {
+
+            push2.style.float = 'left';
+            isN2 = true;
+            if(isN && isN2 && isN3) {
+                push.style.float = 'right';
+                isN = false;
+            }
+        }
+    }
+    function myCLick3() {
+
+        if (isN3) {
+            push3.style.float = 'right';
+            isN3 = false;
+           if(!isN && !isN2 && !isN3) {
+               push.style.float = 'left';
+               isN = true;
+           }
+        } else {
+
+            push3.style.float = 'left';
+            isN3 = true;
+            if(isN && isN2 && isN3) {
+                push.style.float = 'right';
+                isN = false;
+            }
+        }
+    }
+
+</script>
+
+</body>
+</html>

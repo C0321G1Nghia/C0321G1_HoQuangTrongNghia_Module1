@@ -88,13 +88,51 @@
 <!--    document.write("Sum: "+sum);-->
 
 <!--</script>-->
-<p><b>Fizz - Buzz</b></p>
+<!--<p><b>Fizz - Buzz</b></p>
+<div id="so"></div>
 <script>
-    let count = 0;
-    while (count<100){
+
+    for (let i = 1; i<100; i ++){
+        if (i%3==0){
+            document.write("Fizz" + "<br>");
+        }
+
+        if (i%7==0){
+            document.write("Buzz" +"<br>");
+        }
+
+
+        if (i%3==0 && i%7==0){
+            document.write("FizzBuzz" + "<br>");
+        }
+
+        if (i%3!=0 && i%7!=0){
+            document.write(i + "<br>");
+        }
 
     }
+</script>-->
+<p>Đoán số</p>
+<script>
+    let count = 1;
+    let min = parseInt(prompt('Nhập vào số thứ nhất: '));
+    let max = parseInt(prompt('Nhập vào số thứ hai: '));
+    let floor = max - min + 1;
+    let random = Math.floor(Math.random() * floor) + min;
+    // alert(random)
+    while (count <= 3) {
+        let guess = parseInt(prompt('Nhập giá trị muốn đoán: '));
+        if (guess == random) {
+            alert('Bạn đã chọn đúng');
+            break;
+        } else if (guess > random) {
+            alert('Số bạn nhập lớn hơn đáp án');
+            count++;
+        } else {
+            alert('Số bạn nhập nhỏ hơn đáp án');
+            count++;
+        }
+    }
 </script>
-
 </body>
 </html>
